@@ -1,0 +1,346 @@
+@import './variable.scss';
+@import './mixin.scss';
+.main{
+    .introduce{
+        background-image: url('../images/introduce.jpg');
+        padding: 0 130px;
+        .content{
+            font-size: 10px;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            .content__title{
+                font-size: 6em;
+                color: white;
+                text-transform: uppercase;
+                text-shadow: red 3px -3px 5px;
+                color: yellow;
+            }
+            .content__des{ 
+                // border: 1px solid red;
+                font-size: 3em;
+                color: white;
+                padding: 20px 0;
+                padding-right: 200px;
+                line-height: 1.4;
+                text-shadow: red 3px -3px 5px;
+            }   
+        }
+    }
+    .my-team__content{
+        align-items: center;
+        --bs-gutter-x: 4rem;
+        --bs-gutter-y: 4rem;
+    }
+    .my-team{
+        padding: 80px;
+        font-size: 10px;
+        .my-team__title{
+            font-size: 3.3em;
+            text-transform: uppercase;
+            text-align: center;
+          
+            color: #f83703;
+        }
+        .my-team__img{
+            width: 100%;
+            border-radius: 10px;
+            height: 580px;
+        }
+        .my-team__des{
+            font-size: $fontSize;
+            text-align: justify;
+            line-height: 1.5;
+           
+            span{
+                color: #f83703;
+            }
+        }
+    }
+    .benefits{
+        // border: 1px solid red;
+        padding: 0 80px 80px 80px;
+        font-size: 10px;
+        text-align: center;
+        .row{
+            --bs-gutter-x: 4rem;
+            --bs-gutter-y: 4rem;
+            .benefit-title > h1{
+            font-size: 3.3em;
+            text-transform: uppercase;
+            color: #f83703;
+            }
+            .benefit > h2{
+                font-size: $fontSize;
+                padding-top: 15px;
+            }
+        }
+    }
+    .location{
+        font-size: 10px;
+        padding: 80px;
+        padding-top: 60px;
+        background-color: #f4f2f2;
+        & > .row{
+            padding: 40px 0;
+            align-items: center;
+            border-bottom: 1px solid grey;
+            margin-top: 20px;
+            
+            &:first-child{
+                border: none;
+                margin: 0;
+                padding: 0;
+            }
+            &:last-child{
+                border-bottom: none;
+                padding-bottom: 0;
+            }
+        }
+        .row .location-title {
+            font-size: 3.3em;
+            color:#f83703;
+            text-transform: uppercase;
+            text-align: center;
+            
+        }
+        .location-position{
+            h2{
+                font-size: $fontSize;
+            }
+        }
+        .location-des{
+            padding-left: 100px;
+            p{font-size: $fontSize;}
+            line-height: 1.5;
+        }
+        .location-apply{
+            display: flex;
+            justify-content: flex-end;
+            .btn--apply{
+                @include main-button();
+                text-transform: uppercase;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    .call-me{
+        text-align: center;
+        font-size: 10px;
+        padding: 80px;
+        .call-me__title{
+            h1{
+                font-size: 3.3em;
+                color:#f83703;
+                text-transform: uppercase;
+            }
+        }
+        .call-me__phone{
+            h2{
+                font-size: 2.5em;
+                line-height: 1.8;
+            }
+        }
+
+    }
+}
+
+
+// Responsive
+
+@include responsive_main_lg__{
+    .main{
+        .introduce{
+            .content{
+                font-size: 9px;
+                .content__des{
+                    line-height: 1.5;
+                    padding-right: 0;
+                }
+            }
+        }
+        .my-team{
+            font-size: 8.5px;
+            padding-top: 50px;
+        }
+        .benefits{
+            font-size: 9px;
+        }
+    }
+}
+
+@include responsive_main_md__{
+    .main{
+        .introduce{
+            .content{
+                font-size: 8.5px;
+            }
+        }
+        .my-team{
+            padding: 60px;
+            font-size: 8.5px;
+        }
+        .benefits{
+            padding: 60px;
+            padding-top: 0;
+            font-size: 8.5px;
+            .row{
+                .benefit-title > h1{
+                    line-height: 1.4;
+                }
+            }
+        }
+        .location{
+            padding: 60px;
+            font-size: 8.5px;
+            .location-des{
+                padding-left: 50px;
+            }
+        }
+        .call-me{
+            padding: 60px;
+            font-size: 8.5px;
+        }
+    }
+}
+
+@include responsive_main_sm__{
+    .main{
+        .introduce{
+            height: 350px;
+            padding: 0 50px;
+            .content{
+                font-size: 7.5px;
+            }
+        }
+        .my-team{
+            padding: 40px;
+            .my-team__title{
+                font-size: 2.8em;
+            }
+        }
+        .benefits{
+            font-size: 7px;
+            padding: 40px;
+            padding-top: 0;
+            .row{
+                .benefit > h2{
+                    line-height: 1.5;
+                    padding-top: 15px;
+                }
+            }
+        }
+        .location{
+            padding: 40px;
+            .location-des{
+                padding-left: 20px;
+            }
+        }
+        .call-me{
+            padding: 40px;
+            font-size: 8px;
+        }
+    }
+}
+@include responsive_main_xm__{
+    .main{
+        .introduce{
+            .content{
+                font-size: 6.5px;
+            }
+        }
+        .my-team{
+            padding: 25px;
+            font-size: 8px;
+            .my-team__content{
+                --bs-gutter-y: 2.3rem;
+            }
+            .my-team__title{
+                line-height: 1.4;
+            }
+            .my-team__img{
+                height: 350px;
+            }
+        }
+        .benefits{
+            font-size: 5.9px;
+            .row{
+                --bs-gutter-x: 3rem;
+                --bs-gutter-y: 3rem;
+                .benefit > h2{
+                    line-height: 1.5;
+                    padding-top: 15px;
+                }
+                .benefit>img{
+                    width: 65px;
+                }
+            }
+        }
+        .location{
+            padding: 40px;
+            font-size: 7px;
+            .location-des{
+                padding-left: 20px;
+                line-height: 1.6;
+            }
+            .location-position{
+                h2{
+                    line-height: 1.4;
+                }
+            }
+            .location-apply{
+                .btn--apply{
+                    padding: 8px;
+                    box-shadow:#d60505 0px 5px 0px 0px;
+                }
+            }
+            & > .row{
+                padding: 20px 0;
+            }
+        }
+        .call-me{
+            padding-bottom: 60px;
+            font-size: 6px;
+            line-height: 1.4;
+            .row{
+                --bs-gutter-y: 1.3rem;
+            }
+        }
+    }
+}
+@include responsive_xxm{
+    .main{
+        .introduce{
+            padding: 0 30px;
+            .content{
+                font-size: 6px;
+            }
+        }
+        .my-team{
+            padding: 20px;
+            font-size: 8px;
+            .my-team__content{
+                --bs-gutter-y: 2rem;
+            }
+        }
+        .benefits{
+            font-size: 5px;
+            padding: 30px;
+            .row{
+                --bs-gutter-x: 2rem;
+                --bs-gutter-y: 2rem;
+                .benefit>img{
+                    width: 50px;
+                }
+            }
+        }
+        .location{
+            font-size: 5px;
+        }
+        .call-me{
+            font-size: 5px;
+        }
+    }
+}

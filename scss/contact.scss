@@ -1,0 +1,161 @@
+@import './mixin.scss';
+@import './variable.scss';
+
+.main{
+    .introduce{
+        background-image: url('../images/introduce.jpg');
+        padding: 0 130px;
+        .introduce_content{
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 10px;
+            h1{
+                font-size: 6em;
+                text-shadow: red 3px -3px 5px;
+                color: yellow;
+                text-transform: uppercase;
+                line-height: 1.4;
+            }
+            p{
+                font-size: 3em;
+                text-shadow: red 3px -3px 5px;
+                color: white;
+                margin-top: 20px;
+                line-height: 1.4;
+            }
+        }
+    }
+    .contact{
+        margin: 80px;
+        font-size: 10px;
+        .row{
+            --bs-gutter-x: 4rem;
+            --bs-gutter-y: 4rem;
+        }
+        .contact-map{
+            border-radius: 5px;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0 15px 2px grey;
+            iframe{
+                border-radius: 5px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .contact-form{
+            border-radius: 5px;
+            box-shadow: 0 0 15px 2px grey;
+            padding: 20px;
+            .row{
+                --bs-gutter-x: 2rem;
+                --bs-gutter-y: 2rem;
+            }
+            .form-group > input, .form-group>textarea{
+                @include formInput(12px, 1.6em);
+            }
+            .form-title{
+               @include formTitle(2.5em,$color-title-form);
+            }
+            #input-submit{
+                @include formInputSubmit(10px, 15px);
+            }
+            .message{
+                @include mess(4px, 8px);
+            }
+            .hide{
+                display: none;
+            }
+        }
+    }
+}
+
+// Responsive
+
+@include responsive_main_lg__{
+    .main{
+        .contact{
+            margin: 60px;
+            margin-bottom: 80px;
+            font-size: 8px;
+        }
+    }
+}
+
+@include responsive_main_md__{
+    .main{
+        .contact{
+            margin: 50px;
+            margin-bottom: 70px;
+            .contact-map{
+                height: 350px;
+            }
+        }
+    }
+}
+
+@include responsive_main_sm__{
+    .main{
+        .introduce{
+            height: 350px;
+            .introduce_content{
+                font-size: 9px;
+            }
+        }
+        .contact{
+            margin: 30px;
+            margin-bottom: 60px;
+            font-size: 7px;
+            .row{
+                --bs-gutter-x: 3rem;
+                --bs-gutter-y: 3rem;
+            }
+        }
+    }
+}
+@include responsive_main_xm__{
+    .main{
+        .introduce{
+            height: 350px;
+            padding: 0 50px;
+            .introduce_content{
+                font-size: 8px;
+            }
+        }
+        .contact{
+            margin: 20px;
+            margin-bottom: 60px;
+            .row{
+                --bs-gutter-x: 2rem;
+                --bs-gutter-y: 2rem;
+            }
+        }
+    }
+}
+@include responsive_xxm{
+    .main{
+        .introduce{
+            padding: 0 40px;
+            .introduce_content{
+                font-size: 6px;
+            }
+        }
+        .contact{
+            margin: 15px;
+            margin-bottom: 50px;
+            font-size: 7px;
+            .contact-form{
+                padding: 15px;
+                .row{
+                    --bs-gutter-x: 1.5rem;
+                    --bs-gutter-y: 1.5rem;    
+                }
+            }
+            .row{
+                --bs-gutter-x: 1.5rem;
+                --bs-gutter-y: 1.5rem;
+            }
+        }
+    }
+}

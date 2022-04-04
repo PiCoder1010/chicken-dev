@@ -1,0 +1,52 @@
+@import './mixin.scss';
+@import './variable.scss';
+.main{
+    .services{
+        overflow: hidden;
+        margin-top: 0;
+        margin-bottom: 0;
+        [class^='service-']{
+            padding: 0px;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+            }
+        }
+        &--f{
+            margin-top: 40px;
+        }
+        &--l{
+            margin-bottom: 60px;
+        }
+        &{
+            .service-1{
+                height: 650px;
+            }
+            .service-2{
+                height: 300px;
+            }
+            .service-3{
+                height: 300px;
+            }
+            .service-4{
+                height: 330px;
+            }
+        }
+    }
+    .services+.services{
+        margin-top: 20px;
+    }
+}
+
+@include responsive_main_md__{
+    .main{
+        .services{
+            &{
+                [class^='service-']{
+                    height: auto;
+                }
+            }
+        }
+    }
+}

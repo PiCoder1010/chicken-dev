@@ -1,0 +1,240 @@
+@import './mixin.scss';
+@import './variable.scss';
+// Style
+
+.main{
+    .introduce{
+        background-image: url('../images/introduce.jpg');
+        padding: 0 150px;
+        .content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: yellow;
+            text-shadow: red 5px -5px 5px;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            .content__title{
+                font-size: 5em;
+                color: yellow;
+                padding: 0;
+                text-transform: uppercase;
+                text-align: initial;
+            }
+            img{
+                width: 250px;
+            }
+        }
+    }
+    .discount{
+        padding: 80px;
+        .discount__content{
+            // border: 1px solid red;
+            font-size: 10px;
+            .discount-ck{
+                position: relative;
+                border: 4px dashed orangered;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0 30px 50px 30px;
+                .discount-ck__img{
+                    width: 268px;
+                    height: 268px;
+                }
+                .discount-ck__name{
+                    font-size: 2.3em;
+                    text-transform: uppercase;
+                    color: red;
+                    text-shadow: 2px -2px 2px yellow;
+                    text-align: center;
+                }
+                .discount-ck__money{
+                    position: relative;
+                    font-size: 2.5em;
+                    padding: 30px 0;
+                    color: red;
+                    font-weight: bolder;
+                    animation: spinnerLR 1s linear infinite;
+                }
+                @keyframes spinnerLR {
+                    0% {top: 0; left: 0;}
+                    50%{top: 0; left: 20px;}
+                    100% {top: 0; left: 0;}
+                }
+                .btn--discount{
+                    @include main-button();
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+                .discount-ck__percent{
+                    position: absolute;
+                    font-size: 2em;
+                    color: white;
+                    background-image: linear-gradient(to right, red, orangered);
+                    padding: 5px 8px;
+                    border-radius: 5px;
+                    top: 20px;
+                    right: 20px;
+                }
+            }
+            .discount-ck--1, .discount-ck--2, .discount-ck--3,  .discount-ck--7, .discount-ck--8, .discount-ck--9{
+                border-top: none;
+                border-bottom: none;
+            }
+            .discount-ck--1, .discount-ck--4, .discount-ck--7,  .discount-ck--3, .discount-ck--6, .discount-ck--9{
+                border-left: none;
+                border-right: none;
+            }
+            .discount-ck--5, .discount-ck--6, .discount-ck--7, .discount-ck--8{
+                .discount-ck__img{
+                    padding: 40px;
+                }
+            }
+            .discount-ck--9{
+                .discount-ck__img{
+                    padding: 50px;
+                }
+            }
+        }
+    }
+}
+@include responsive_main_lg__ {
+    .main{
+        .introduce{
+            padding: 0 50px;
+        }
+        .discount{
+            .discount__content{
+                font-size: 9px;
+            }
+        }
+    }
+}
+@include responsive_main_md__ {
+    .main{
+        .introduce{
+            .content{
+                font-size: 8px;
+                img{
+                    width: 180px;
+                }
+            }
+        }
+        .discount{
+            .discount__content{
+                .discount-ck{
+                    border: 4px dashed orangered;
+                }
+                .discount-ck--1, .discount-ck--3, .discount-ck--5, .discount-ck--7, .discount-ck--9{
+                    border-left: none;
+                    border-top: none;
+                }
+                .discount-ck--2, .discount-ck--4, .discount-ck--6, .discount-ck--8{
+                    border-left: none;
+                    border-right: none;
+                    border-top: none;
+                }
+                .discount-ck--9{
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
+@include responsive_main_sm__{
+    .main{
+        .introduce{
+            padding: 0 40px;
+            .content{
+                flex-direction: column;
+                font-size: 8px;
+                img{
+                    width: 150px;
+                    margin-top: 40px;
+                }
+            }   
+        }
+        .discount{
+            padding: 40px;
+            padding-bottom: 60px;
+            .discount__content{
+                .discount-ck{
+                    border: 4px dashed orangered;
+                }
+                @for $i from 2 through length($className_2) {
+                    #{nth($className_2, $i)}{
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include responsive_main_xm__{
+    .main{
+        .introduce{
+            padding: 0 20px;
+            .content{
+                font-size: 6px;
+                .content__title{
+                    text-align: center;
+                }
+            }   
+        }
+        .discount{
+            padding: 30px;
+            padding-bottom: 60px;
+            .discount__content{
+                @for $i from 2 through length($className_2) {
+                    #{nth($className_2, $i)}{
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+@include responsive_xxm {
+    .main{
+        .introduce{
+            .content{
+                font-size: 5px;
+            }   
+        }
+        .discount{
+            padding: 20px;
+            padding-bottom: 60px;
+            .discount__content{
+                @for $i from 2 through length($className_2) {
+                    #{nth($className_2, $i)}{
+                        margin-top: 20px;
+                    }
+                }
+            }
+            .discount__content{
+                .discount-ck{
+                    .discount-ck__img{
+                        padding: 30px;
+                    }
+                    .discount-ck__name{
+                        line-height: 1.4;
+                    }
+                }
+                .discount-ck--5, .discount-ck--6, .discount-ck--7, .discount-ck--8{
+                    .discount-ck__img{
+                        padding: 60px;
+                    }
+                }
+                .discount-ck--9{
+                    .discount-ck__img{
+                        padding: 70px;
+                    }
+                }
+            }
+        }
+    }
+}

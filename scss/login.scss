@@ -1,0 +1,160 @@
+@import './mixin.scss';
+@import './variable.scss';
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #8BC6EC, #2a2f92);
+}
+.main{
+    overflow: hidden;
+    padding: 10px;
+    .form-login{
+        background-color: white;
+        box-shadow: 0 0 10px 5px white;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 10px;
+        margin: 0 480px;
+        .row{
+            --bs-gutter-x: 2rem;
+            --bs-gutter-y: 2rem;
+            .form-title{
+                @include formTitle(3em, blue);
+            }
+        }
+        .form-group{
+            position: relative;
+            .user-icon, .pass-icon{
+                position: absolute;
+                left: 10px;
+                top: 13px;
+                font-size: $fontSize;
+                color: grey;
+            }
+            input{
+                @include formInput(10px, 1.7em);
+                padding-left: 30px;
+            }
+            #input-submit{
+                @include formInputSubmit(10px, 10px);
+                background-color: #f83703;
+                background-image: linear-gradient(to right, #8BC6EC, #2a2f92);
+                &:hover{
+                    background-image: linear-gradient(to left, #8BC6EC, #2a2f92);
+                }
+                
+            }
+            .message{
+                @include mess(4px, 8px);
+            }
+            .hide{
+                display: none;
+            }
+        }
+        .form-check{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            a:hover{
+                color: blue;
+            }
+            .form-group{
+                display: flex;
+                align-items: center;
+                flex-grow: 1;
+                input{
+                    width: initial;
+                }
+                label{
+                    font-size: 1.5em;
+                    margin-left: 10px;
+                }
+            }
+            .forget-password{
+                font-size: 1.5em;
+            }
+        }
+        .login-other{
+            .login-other__title{
+                font-size: 1.5em;
+                text-align: center;
+                
+            }
+            .login-other__app{
+                margin-top: 20px;
+                text-align: center;
+               img{
+                   width: 45px;
+                   cursor: pointer;
+                   transition: all 0.3s linear;
+                   &:hover{
+                       transform: scale(1.2);
+                   }
+               }
+               img+img{
+                   margin-left: 10px;
+               }
+            }        
+        }
+        .sign-up{
+            text-align: center;
+            h1{
+                font-size: 1.5em;
+                text-align: center;
+            }
+            a{
+                display: inline-block;
+                font-weight: bold;
+                margin-top: 20px;
+                font-size: $fontSize;
+                background-image: linear-gradient(to right, #8BC6EC, #2a2f92);
+                padding: 8px 16px;
+                border-radius: 5px;
+                color: white;
+                &:hover{
+                    background-image: linear-gradient(green, green);
+                }
+            }
+        }
+    }
+}
+
+
+// Responsive
+@include responsive_main_lg__{
+    .main{
+        .form-login{
+            margin: 0 150px;
+        }
+    }
+}
+@include responsive_main_sm__{
+    .main{
+        .form-login{
+            margin: 0 60px;
+        }
+    }
+}
+@include responsive_main_xm__{
+    .main{
+        .form-login{
+            font-size: 8px;
+            margin: 0 30px;
+        }
+    }
+}
+@include responsive_xxm{
+    .main{
+        .form-login{
+            font-size: 7px;
+            margin: 0 30px;
+        }
+    }
+}

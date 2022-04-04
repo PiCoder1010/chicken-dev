@@ -1,0 +1,141 @@
+@import "./variable.scss";
+
+@mixin flexcenter() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// Form
+@mixin mess($pl, $pt) {
+    font-size: 1.5em;
+    display: block;
+    padding-left: $pl;
+    padding-top: $pt;
+    font-weight: bold;
+}
+@mixin formTitle($fs, $color){
+    text-align: center;
+    font-size: $fs;
+    color: $color;
+    text-transform: uppercase;
+}
+@mixin formInput($pd, $fs) {
+    width: 100%;
+    padding: $pd;
+    border: 2px solid grey;
+    font-size: $fs;
+    font-weight: bold;
+    border-radius: 4px;
+    outline: none;
+    font-family: inherit;
+    &:focus{
+        border: 2px solid rgb(10, 176, 231);
+    }
+}
+
+@mixin formInputSubmit($pt, $pb) {
+    @include main-button();
+    box-shadow: initial;
+    background-color: #840906;
+    padding-top: $pt;
+    padding-bottom: $pb;
+    &:hover{
+        box-shadow: initial;
+        background-color: green;
+        color: white;
+    }
+}
+// Responsive mixin
+// Main lg vs mdd
+@mixin responsive_main_lg__() {
+    @media #{$res_main_lg__} {
+        @content;
+    }
+}
+// Main sm vs xm
+@mixin responsive_main_md__() {
+    @media #{$res_main_md__} {
+        @content;
+    }
+}
+
+@mixin responsive_main_sm__() {
+    @media #{$res_main_sm__} {
+        @content;
+    }
+}
+
+@mixin responsive_main_xm__ {
+    @media #{$res_main_xm__} {
+        @content;
+    }
+}
+// Large
+@mixin responsive_lg() {
+    @media #{$res_lg} {
+        @content;
+    }
+}
+
+// Medium
+@mixin responsive_md() {
+    @media #{$res_md} {
+        @content;
+    }
+}
+
+// Small
+@mixin responsive_sm() {
+    @media #{$res_sm} {
+        @content;
+    }
+}
+
+// Extra small
+@mixin responsive_xm() {
+    @media #{$res_xm} {
+        @content;
+    }
+}
+// Extra Extra small
+@mixin responsive_xxm() {
+    @media #{$res_xxm} {
+        @content;
+    }
+}
+// Button mixin
+@mixin main-button() {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.4s linear;
+    font-family: inherit;
+    font-size: $fontSize-btn;
+    box-shadow: #d60505 0px 8px 0px 0px;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    &:hover {
+        box-shadow: rgb(177, 117, 14) 0px 8px 0px 0px;
+        background-color: #ffad13;
+        color: black;
+    }
+}
+
+// Button other mixin
+@mixin button($bg-color, $color, $bg-color-hover, $color-hover) {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.4s linear;
+    font-family: inherit;
+    font-size: $fontSize-btn;
+    background-color: $bg-color;
+    color: $color;
+    &:hover {
+        background-color: $bg-color-hover;
+        color: $color-hover;
+    }
+}

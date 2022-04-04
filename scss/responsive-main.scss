@@ -1,0 +1,174 @@
+@import './mixin.scss';
+@import './variable.scss';
+@include responsive_main_lg__{
+    // Header
+    .header{
+        .nav-header{
+            .nav-list{
+                .nav-list-link{
+                    display: none;
+                }  
+                .nav-list-icon{
+                    .nav-item-icon{
+                        &:nth-last-child(2)>a{
+                            padding-right: 16px;
+                        }
+                        .bars-icon{
+                            display: block;
+                        }
+                    } 
+                }      
+            }
+        }
+    }
+    .footer{
+        font-size: 9.9px;
+    }
+}
+
+@include responsive_main_md__{
+    .footer{
+        .footer-main{
+            .row{
+                .address{
+                    text-align: center;
+                }
+                .call{
+                    .call__number{
+                        animation: initial;
+                    }
+                }
+                .open{
+                    text-align: center;
+                }
+                .contact{
+                    text-align: center;
+                    .nav-list-social{
+                        justify-content: center;
+                    }
+                }
+                .standard{
+                    text-align: center;
+                }   
+            }
+        }
+        .drop-heart{
+            right: 10%;
+        }
+    }
+}
+@include responsive_main_sm__{
+    .header{
+        .nav-header{
+            .logo{
+                width: 100px;
+            }
+            .nav-list{
+                .nav-list-icon{
+                    .nav-item-icon{
+                        a{
+                            padding: 5px 10px;
+                        }
+                        &:nth-last-child(2)>a{
+                            padding-right: 10px;
+                        }
+                    } 
+                    .cart-count{
+                        .count{
+                            width: 25px;
+                            height: 25px;
+                            bottom: 3px;
+                        }
+                    }
+                }      
+            }
+        }
+        .nav-header-other{
+            width: 60%;
+        }
+    }
+    .footer{
+        .btn--backtotop{
+            left: 20px;
+        }
+        @keyframes smoothBackUp {
+            0% {bottom: 30px; left: 20px; opacity: 1;}
+            50% {bottom: 60px; left: 20px; opacity: 0.75;}
+            75% {bottom: 90px; left: 20px; opacity: 0.5;}
+            100% {bottom: 100px; left: 20px; opacity: 0;}
+        }
+    }
+}
+@include responsive_main_xm__ {
+    .header{
+        .nav-header{
+            padding: 8px 20px;
+            .logo{
+                width: 80px;
+                animation: initial;
+            }
+            .nav-list{
+                .nav-list-icon{
+                    .nav-item-icon{
+                        a{
+                            img{
+                                width: 30px;
+                            }
+                        }
+                    } 
+                    .cart-count{
+                        .count{
+                            width: 20px;
+                            height: 20px;
+                            bottom: 3px;
+                            font-size: 12px;
+                        }
+                    }
+                }      
+            }
+        }
+        .nav-header-other{
+            width: 100%;
+        }
+    }
+    .footer{
+        .btn--backtotop{
+            bottom: 100px;
+            left: 20px;
+        }
+        @keyframes smoothBackUp {
+            0% {bottom: 110px; left: 20px; opacity: 1;}
+            50% {bottom: 130px; left: 20px; opacity: 0.75;}
+            75% {bottom: 150px; left: 20px; opacity: 0.5;}
+            100% {bottom: 160px; left: 20px; opacity: 0;}
+        }
+        [class^='open__']{
+            &:last-child{
+                color: yellow;
+                line-height: 1.5 !important;
+            }
+        }
+        .address__street, .copy-right__title{
+            line-height: 1.5 !important;
+        }
+        .drop-heart{
+            right: 5%;
+        }
+    }
+}
+
+@include responsive_xxm{
+    .footer{
+        font-size: 8px;
+        .btn--backtotop{
+            bottom: 90px;
+            left: 10px;
+        }
+        @keyframes smoothBackUp {
+            0% {bottom: 100px; left: 10px; opacity: 1;}
+            50% {bottom: 130px; left: 10px; opacity: 0.75;}
+            75% {bottom: 150px; left: 10px; opacity: 0.5;}
+            100% {bottom: 160px; left: 10px; opacity: 0;}
+        }
+    }
+} 

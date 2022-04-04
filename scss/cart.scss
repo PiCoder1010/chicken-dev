@@ -1,0 +1,361 @@
+@import "./mixin.scss";
+@import "./variable.scss";
+
+.main {
+    .infor-order {
+        margin: 50px;
+        margin-bottom:70px;
+        .row{
+            align-items: center;
+            --bs-gutter-x: 3rem;
+            --bs-gutter-y: 3rem;
+        }
+        .order-form {
+            box-shadow: 0 0 5px 2px grey;
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 10px;
+            .row {
+                --bs-gutter-x: 2rem;
+                --bs-gutter-y: 2rem;
+                
+            }
+            .order-form-title{
+                @include formTitle(2.5em, red);
+            }
+            .form-group {
+                input,
+                select,
+                textarea {
+                    @include formInput(15px, 1.5em);
+                }
+                .message {
+                    @include mess(4px, 6px);
+                }
+                .hide {
+                    display: none;
+                }
+                #input-submit {
+                    @include formInputSubmit(15px, 15px);
+                }
+            }
+        }
+        .order-see-again {
+            font-size: 10px;
+            box-shadow: 0 0 5px 2px grey;
+            border-radius: 5px;
+            padding: 20px;
+            .row {
+                --bs-gutter-x: 2rem;
+                --bs-gutter-y: 2rem;
+            }
+            .time-dilivery {
+                background-color: $main-bg;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                text-transform: uppercase;
+                h1 {
+                    flex-grow: 1;
+                    font-size: $fontSize;
+                    color: white;
+                    text-align: center;
+                    padding: 5px;
+                }
+                .form-group {
+                    select {
+                        @include formInput(15px, 15px);
+                        border-radius: initial;
+                        font-size: $fontSize;
+                        background-color:rgb(45, 4, 4);
+                        color: white;
+                        border: 2px solid transparent;
+                        outline: none;
+                        option {
+                            background-color: white;
+                            color: black;
+                        }
+                    }
+                }
+            }
+            .time-dilivery-title {
+                font-size: 2em;
+                text-transform: uppercase;
+                text-align: center;
+                color: white;
+                background-color:rgb(45, 4, 4);
+                padding: 15px 0;
+                
+            }
+            .order-see-again-food {
+                table {
+                    font-size: 1.7em;
+                    width: 100%;
+                    background-color: $main-bg;
+                    color: white;
+                    line-height: 1.4;
+                    .btn--food--add, .btn--food--remove{
+                        border: none;
+                        outline: none;
+                        background-color: black;
+                        color: white;
+                        width: 25px;
+                        height: 25px;
+                        font-size: 1.2em;
+                        font-weight: bold;
+                        border-radius: 3px;
+                        margin: 5px;
+                        transition: all linear 0.3s;
+                        &:hover{
+                            background-color: white;
+                            color: black;
+                        }
+                    }
+                    .btn--food--delete{
+                        cursor: pointer;
+                        border: none;
+                        outline: none;
+                        background-color: transparent;
+                        &:hover{
+                            color: yellow;
+                            transform: scale(1.2);
+                        }
+                        span{
+                            font-weight: bold;
+                            font-size: $fontSize;
+                        }
+                    }
+                    .quantity-food{
+                        text-align: center;
+                    }
+                }
+                table,th,td {
+                    border: 1px solid white;
+                    border-collapse: collapse;
+                    text-align: center;
+                }
+                th,td {
+                    padding: 10px;
+                }
+
+               
+            }
+            .infor-payment{
+                table {
+                    font-size: 1.7em;
+                    width: 100%;
+                    background-color: $main-bg;
+                    color: white;
+                }
+                table,
+                th,
+                td {
+                    border: 1px solid white;
+                    border-collapse: collapse;
+                    text-align: center;
+                }
+                th,
+                td {
+                    padding: 10px;
+                }
+            }
+            .back-menu{
+                display: block;
+                text-align: center;
+                color: red;
+                font-size: $fontSize;
+                background-color:  rgb(45, 4, 4);
+                color: white;
+                padding: 15px;
+                transition: all 0.3s linear;
+                
+                i{
+                    color: white;
+                    background-color: initial;
+                    margin-left: 10px;
+                }
+                &:hover{
+                    background-color: $main-bg;
+                }
+            }
+            .hide{
+                display: none;
+            }
+        }
+    }
+}
+
+//responsive
+@include responsive_main_lg__{
+    .main{
+        .infor-order{
+            .row {
+                flex-direction: column-reverse;
+                --bs-gutter-x: 3rem;
+                --bs-gutter-y: 3rem;
+            }
+            .order-form{
+                .row{
+                    flex-direction: initial;
+                }
+            }
+            .order-see-again{
+                .row{
+                    flex-direction: initial;
+                }
+                .btn--food--delete{
+                    font-size: inherit !important;
+                }
+            }
+        }
+    }
+}
+
+//responsive
+@include responsive_main_md__{
+    .main{
+        .infor-order{
+            margin: 40px;
+            margin-bottom: 60px;
+            .row {
+                --bs-gutter-x: 4rem;
+                --bs-gutter-y: 4rem;
+            }
+            .order-see-again{
+                .row{
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+}
+@include responsive_main_sm__{
+    .main{
+        .infor-order{
+            margin: 30px;
+            margin-bottom: 60px;
+            .row {
+                --bs-gutter-x: 3rem;
+                --bs-gutter-y: 3rem;
+            }
+            .order-see-again{
+                font-size: 7px;
+                .order-see-again-food{
+                    th,td {
+                        padding: 8px;
+                    }
+                }
+                .back-menu{
+                    padding: 10px; 
+                }
+                .infor-payment{
+                    th,td {
+                        padding: 8px;
+                    }
+                }
+                .time-dilivery-title{
+                    padding: 10px;
+                }
+                .time-dilivery{
+                    .form-group{
+                        select{
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include responsive_main_xm__{
+    .main{
+        .infor-order{
+            margin: 20px;
+            margin-bottom: 60px;
+            .row {
+                --bs-gutter-x: 2rem;
+                --bs-gutter-y: 2rem;
+            }
+            .order-form{
+                font-size: 8px;
+                padding: 15px;
+                .row{
+                    --bs-gutter-x: 1.5rem;
+                    --bs-gutter-y: 1.5rem;
+                }
+            }
+            .order-see-again{
+                padding: 10px;
+                .row{
+                    font-size: 6.5px;
+                    --bs-gutter-x: 1rem;
+                    --bs-gutter-y: 1rem;
+                }
+                .back-menu{
+                    padding: 8px; 
+                }
+                .order-see-again-food{
+                    table{
+                        .btn--food--add, .btn--food--remove{
+                            width: 15px;
+                            height: 15px;
+                            font-size: 1em;
+                            display: block;   
+                            position: relative;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            margin: 0;
+                        }
+                        .quantity-food{
+                            width: 100%;
+                            display: block;
+                            padding: 3px 0;
+                        }
+                    }
+                    th,td {
+                        padding: 5px;
+                    }
+
+                }
+                .time-dilivery-title{
+                    padding: 8px;
+                }
+                .time-dilivery{
+                    .form-group{
+                        select{
+                            padding: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@include responsive_xxm{
+    .main{
+        .infor-order{
+            margin: 0px;
+            margin-bottom: 40px;
+            .row {
+                --bs-gutter-y: 0rem;
+            }
+            .order-form{
+                margin: 15px;
+                margin-top: 5px;
+                padding: 10px;
+                .row{
+                    --bs-gutter-x: 1rem;
+                    --bs-gutter-y: 1rem;
+                }
+            }
+            .order-see-again{
+                border: none;
+                box-shadow: initial;
+            }
+        }
+    }
+    
+}

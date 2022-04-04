@@ -1,0 +1,32 @@
+// Background
+$main-bg: #840906;
+$fontSize-header: 1.8em;
+$fontSize-footer: 1.6em;
+$fontSize: 1.8em;
+$fontSize-btn: 1.8em;
+$width-icon-header: 40px;
+$width-logo: 130px;
+$color-title-form: #f83703;
+
+
+// Responsive
+$res_main_lg__: 'screen and (max-width: 1199px)';
+$res_main_md__: 'screen and (max-width: 991px)';
+$res_main_sm__: 'screen and (max-width: 767px)';
+$res_main_xm__: 'screen and (max-width: 575px)';
+
+$res_lg: 'screen and (min-width: 992px) and (max-width: 1199px)';
+$res_md: 'screen and (min-width: 768px) and (max-width: 991px)';
+$res_sm: 'screen and (min-width: 576px) and (max-width: 767px)';
+$res_xm: 'screen and (min-width: 321px) and (max-width: 575px)';
+$res_xxm: 'screen and (max-width: 320px)';
+
+// Introduce Backround
+$bg-linear-first: blue, red,black, grey;
+$bg-linear-end: blueviolet, yellow,grey, blue;
+
+// ClassName 
+$className: '.dev-1__des', '.dev-2__des', '.dev-3__des', '.dev-4__des';
+$className_2: '.discount-ck--1', '.discount-ck--2', '.discount-ck--3', 
+'.discount-ck--4', '.discount-ck--5', '.discount-ck--6', '.discount-ck--7', '.discount-ck--8'
+,'.discount-ck--9' ;
