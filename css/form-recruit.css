@@ -1,0 +1,334 @@
+.main .introduce {
+  background-image: url("../images/introduce.jpg");
+  font-size: 10px;
+}
+.main .introduce .staff {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main .introduce .staff .staff__title {
+  color: white;
+  font-size: 5em;
+  text-transform: uppercase;
+  padding: 50px 0;
+  text-shadow: red 5px -5px 5px;
+  color: yellow;
+}
+.main .introduce .staff .staff__delivery {
+  width: 200px;
+}
+.main .introduce-job {
+  margin: 80px;
+}
+.main .introduce-job .row {
+  align-items: center;
+}
+.main .introduce-job .img {
+  overflow: hidden;
+}
+.main .introduce-job .img img {
+  position: relative;
+  animation: spinner4 1.5s ease-in-out infinite;
+}
+@keyframes spinner4 {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  50% {
+    top: 0;
+    left: 70px;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+.main .introduce-job .infor-job {
+  box-shadow: 0 0 10px 2px grey;
+  font-size: 10px;
+  padding: 30px;
+  border-radius: 5px;
+}
+.main .introduce-job .infor-job h1 {
+  font-size: 3em;
+  color: #f83703;
+}
+.main .introduce-job .infor-job p {
+  font-size: 1.8em;
+}
+.main .introduce-job .infor-job .infor-job-salary {
+  border-bottom: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.main .introduce-job .infor-job .infor-job-salary p {
+  color: red;
+}
+.main .introduce-job .infor-job .infor-job-location {
+  border-bottom: 1px solid red;
+  padding: 20px 0;
+  margin-top: 10px;
+}
+.main .introduce-job .infor-job .infor-job-location h1 {
+  margin-bottom: 10px;
+}
+.main .introduce-job .infor-job .infor-job-location p {
+  padding: 10px 0;
+}
+.main .introduce-job .infor-job .infor-job-deadline {
+  margin-top: 10px;
+  padding-top: 20px;
+}
+.main .introduce-job .infor-job .infor-job-deadline p {
+  padding: 10px 0;
+}
+.main .form-recruitment {
+  font-size: 10px;
+  padding: 22px;
+  box-shadow: 0 0 10px 2px grey;
+  border-radius: 5px;
+  margin: 80px;
+  margin-top: 0;
+}
+.main .form-recruitment .row {
+  --bs-gutter-x: 2rem;
+  --bs-gutter-y: 2rem;
+}
+.main .form-recruitment .form-title {
+  text-align: center;
+  font-size: 3em;
+  color: #f83703;
+  text-transform: uppercase;
+}
+.main .form-recruitment .form-group input, .main .form-recruitment .form-group select, .main .form-recruitment .form-group textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid grey;
+  font-size: 1.7em;
+  font-weight: bold;
+  border-radius: 4px;
+  outline: none;
+  font-family: inherit;
+}
+.main .form-recruitment .form-group input:focus, .main .form-recruitment .form-group select:focus, .main .form-recruitment .form-group textarea:focus {
+  border: 2px solid #0ab0e7;
+}
+.main .form-recruitment .form-group #input-submit {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.4s linear;
+  font-family: inherit;
+  font-size: 1.8em;
+  box-shadow: #d60505 0px 8px 0px 0px;
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: initial;
+  background-color: #840906;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.main .form-recruitment .form-group #input-submit:hover {
+  box-shadow: #b1750e 0px 8px 0px 0px;
+  background-color: #ffad13;
+  color: black;
+}
+.main .form-recruitment .form-group #input-submit:hover {
+  box-shadow: initial;
+  background-color: green;
+  color: white;
+}
+.main .form-recruitment .form-group .form-message {
+  font-size: 1.5em;
+  display: block;
+  padding-left: 4px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+.main .form-recruitment .form-group .hide {
+  display: none;
+}
+
+@media screen and (max-width: 1199px) {
+  .main .introduce {
+    font-size: 9.5px;
+  }
+  .main .introduce-job {
+    margin: 60px;
+  }
+  .main .introduce-job .img img {
+    width: 420px;
+    animation: initial;
+  }
+  .main .form-recruitment {
+    margin: 0 60px 80px 60px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .main .introduce {
+    font-size: 8.5px;
+  }
+  .main .introduce-job {
+    margin: 50px;
+  }
+  .main .introduce-job .img img {
+    width: 420px;
+    animation: spinner4 2s ease-in-out infinite;
+  }
+  @keyframes spinner4 {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    50% {
+      top: 0;
+      left: 200px;
+    }
+    100% {
+      top: 0;
+      left: 0;
+    }
+  }
+  .main .form-recruitment {
+    margin: 0 50px 70px 50px;
+    font-size: 8.2px;
+  }
+  .main .form-recruitment .form-message {
+    padding-top: 6px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main .introduce {
+    font-size: 7px;
+  }
+  .main .introduce .staff .staff__delivery {
+    width: 180px;
+  }
+  .main .introduce-job {
+    margin: 40px;
+  }
+  .main .introduce-job .img img {
+    width: 300px;
+  }
+  @keyframes spinner4 {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    50% {
+      top: 0;
+      left: 120px;
+    }
+    100% {
+      top: 0;
+      left: 0;
+    }
+  }
+  .main .form-recruitment {
+    margin: 0 40px 60px 40px;
+    font-size: 8px;
+  }
+  .main .form-recruitment .form-message {
+    padding-top: 6px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .main .introduce {
+    font-size: 6px;
+  }
+  .main .introduce .staff .staff__title {
+    text-align: center;
+    line-height: 1.4;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .main .introduce-job {
+    margin: 20px;
+  }
+  .main .introduce-job .infor-job {
+    font-size: 8px;
+    padding: 20px;
+  }
+  .main .introduce-job .infor-job .infor-job-salary {
+    padding-bottom: 15px;
+  }
+  .main .introduce-job .infor-job .infor-job-location {
+    padding: 15px 0;
+    margin-top: 5px;
+  }
+  .main .introduce-job .infor-job .infor-job-location p {
+    line-height: 1.3;
+  }
+  .main .introduce-job .infor-job .infor-job-deadline {
+    margin-top: 5px;
+    padding-top: 15px;
+  }
+  .main .introduce-job .img {
+    text-align: center;
+  }
+  .main .introduce-job .img img {
+    width: 270px;
+    animation: initial;
+  }
+  @keyframes spinner4 {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    50% {
+      top: 0;
+      left: 120px;
+    }
+    100% {
+      top: 0;
+      left: 0;
+    }
+  }
+  .main .form-recruitment {
+    margin: 0 20px 70px 20px;
+    font-size: 7px;
+    line-height: 1.4;
+    padding: 20px;
+  }
+  .main .form-recruitment .row {
+    --bs-gutter-x: 2rem;
+    --bs-gutter-y: 2rem;
+  }
+  .main .form-recruitment .form-message {
+    padding-top: 6px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .main .introduce {
+    font-size: 5.3px;
+  }
+  .main .introduce .staff .staff__title {
+    text-align: center;
+    padding: 0 50px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+  .main .introduce-job {
+    margin: 15px;
+  }
+  .main .form-recruitment {
+    margin: 0 15px 65px 15px;
+    padding: 15px;
+    font-size: 6px;
+  }
+  .main .form-recruitment .row {
+    --bs-gutter-x: 10rem;
+    --bs-gutter-y: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=form-recruit.css.map */

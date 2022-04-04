@@ -1,0 +1,356 @@
+.main .infor-order {
+  margin: 50px;
+  margin-bottom: 70px;
+}
+.main .infor-order .row {
+  align-items: center;
+  --bs-gutter-x: 3rem;
+  --bs-gutter-y: 3rem;
+}
+.main .infor-order .order-form {
+  box-shadow: 0 0 5px 2px grey;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 10px;
+}
+.main .infor-order .order-form .row {
+  --bs-gutter-x: 2rem;
+  --bs-gutter-y: 2rem;
+}
+.main .infor-order .order-form .order-form-title {
+  text-align: center;
+  font-size: 2.5em;
+  color: red;
+  text-transform: uppercase;
+}
+.main .infor-order .order-form .form-group input,
+.main .infor-order .order-form .form-group select,
+.main .infor-order .order-form .form-group textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid grey;
+  font-size: 1.5em;
+  font-weight: bold;
+  border-radius: 4px;
+  outline: none;
+  font-family: inherit;
+}
+.main .infor-order .order-form .form-group input:focus,
+.main .infor-order .order-form .form-group select:focus,
+.main .infor-order .order-form .form-group textarea:focus {
+  border: 2px solid #0ab0e7;
+}
+.main .infor-order .order-form .form-group .message {
+  font-size: 1.5em;
+  display: block;
+  padding-left: 4px;
+  padding-top: 6px;
+  font-weight: bold;
+}
+.main .infor-order .order-form .form-group .hide {
+  display: none;
+}
+.main .infor-order .order-form .form-group #input-submit {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.4s linear;
+  font-family: inherit;
+  font-size: 1.8em;
+  box-shadow: #d60505 0px 8px 0px 0px;
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: initial;
+  background-color: #840906;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.main .infor-order .order-form .form-group #input-submit:hover {
+  box-shadow: #b1750e 0px 8px 0px 0px;
+  background-color: #ffad13;
+  color: black;
+}
+.main .infor-order .order-form .form-group #input-submit:hover {
+  box-shadow: initial;
+  background-color: green;
+  color: white;
+}
+.main .infor-order .order-see-again {
+  font-size: 10px;
+  box-shadow: 0 0 5px 2px grey;
+  border-radius: 5px;
+  padding: 20px;
+}
+.main .infor-order .order-see-again .row {
+  --bs-gutter-x: 2rem;
+  --bs-gutter-y: 2rem;
+}
+.main .infor-order .order-see-again .time-dilivery {
+  background-color: #840906;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+.main .infor-order .order-see-again .time-dilivery h1 {
+  flex-grow: 1;
+  font-size: 1.8em;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+.main .infor-order .order-see-again .time-dilivery .form-group select {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid grey;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 4px;
+  outline: none;
+  font-family: inherit;
+  border-radius: initial;
+  font-size: 1.8em;
+  background-color: #2d0404;
+  color: white;
+  border: 2px solid transparent;
+  outline: none;
+}
+.main .infor-order .order-see-again .time-dilivery .form-group select:focus {
+  border: 2px solid #0ab0e7;
+}
+.main .infor-order .order-see-again .time-dilivery .form-group select option {
+  background-color: white;
+  color: black;
+}
+.main .infor-order .order-see-again .time-dilivery-title {
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  background-color: #2d0404;
+  padding: 15px 0;
+}
+.main .infor-order .order-see-again .order-see-again-food table {
+  font-size: 1.7em;
+  width: 100%;
+  background-color: #840906;
+  color: white;
+  line-height: 1.4;
+}
+.main .infor-order .order-see-again .order-see-again-food table .btn--food--add, .main .infor-order .order-see-again .order-see-again-food table .btn--food--remove {
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  width: 25px;
+  height: 25px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 3px;
+  margin: 5px;
+  transition: all linear 0.3s;
+}
+.main .infor-order .order-see-again .order-see-again-food table .btn--food--add:hover, .main .infor-order .order-see-again .order-see-again-food table .btn--food--remove:hover {
+  background-color: white;
+  color: black;
+}
+.main .infor-order .order-see-again .order-see-again-food table .btn--food--delete {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.main .infor-order .order-see-again .order-see-again-food table .btn--food--delete:hover {
+  color: yellow;
+  transform: scale(1.2);
+}
+.main .infor-order .order-see-again .order-see-again-food table .btn--food--delete span {
+  font-weight: bold;
+  font-size: 1.8em;
+}
+.main .infor-order .order-see-again .order-see-again-food table .quantity-food {
+  text-align: center;
+}
+.main .infor-order .order-see-again .order-see-again-food table, .main .infor-order .order-see-again .order-see-again-food th, .main .infor-order .order-see-again .order-see-again-food td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  text-align: center;
+}
+.main .infor-order .order-see-again .order-see-again-food th, .main .infor-order .order-see-again .order-see-again-food td {
+  padding: 10px;
+}
+.main .infor-order .order-see-again .infor-payment table {
+  font-size: 1.7em;
+  width: 100%;
+  background-color: #840906;
+  color: white;
+}
+.main .infor-order .order-see-again .infor-payment table,
+.main .infor-order .order-see-again .infor-payment th,
+.main .infor-order .order-see-again .infor-payment td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  text-align: center;
+}
+.main .infor-order .order-see-again .infor-payment th,
+.main .infor-order .order-see-again .infor-payment td {
+  padding: 10px;
+}
+.main .infor-order .order-see-again .back-menu {
+  display: block;
+  text-align: center;
+  color: red;
+  font-size: 1.8em;
+  background-color: #2d0404;
+  color: white;
+  padding: 15px;
+  transition: all 0.3s linear;
+}
+.main .infor-order .order-see-again .back-menu i {
+  color: white;
+  background-color: initial;
+  margin-left: 10px;
+}
+.main .infor-order .order-see-again .back-menu:hover {
+  background-color: #840906;
+}
+.main .infor-order .order-see-again .hide {
+  display: none;
+}
+
+@media screen and (max-width: 1199px) {
+  .main .infor-order .row {
+    flex-direction: column-reverse;
+    --bs-gutter-x: 3rem;
+    --bs-gutter-y: 3rem;
+  }
+  .main .infor-order .order-form .row {
+    flex-direction: initial;
+  }
+  .main .infor-order .order-see-again .row {
+    flex-direction: initial;
+  }
+  .main .infor-order .order-see-again .btn--food--delete {
+    font-size: inherit !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .main .infor-order {
+    margin: 40px;
+    margin-bottom: 60px;
+  }
+  .main .infor-order .row {
+    --bs-gutter-x: 4rem;
+    --bs-gutter-y: 4rem;
+  }
+  .main .infor-order .order-see-again .row {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main .infor-order {
+    margin: 30px;
+    margin-bottom: 60px;
+  }
+  .main .infor-order .row {
+    --bs-gutter-x: 3rem;
+    --bs-gutter-y: 3rem;
+  }
+  .main .infor-order .order-see-again {
+    font-size: 7px;
+  }
+  .main .infor-order .order-see-again .order-see-again-food th, .main .infor-order .order-see-again .order-see-again-food td {
+    padding: 8px;
+  }
+  .main .infor-order .order-see-again .back-menu {
+    padding: 10px;
+  }
+  .main .infor-order .order-see-again .infor-payment th, .main .infor-order .order-see-again .infor-payment td {
+    padding: 8px;
+  }
+  .main .infor-order .order-see-again .time-dilivery-title {
+    padding: 10px;
+  }
+  .main .infor-order .order-see-again .time-dilivery .form-group select {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .main .infor-order {
+    margin: 20px;
+    margin-bottom: 60px;
+  }
+  .main .infor-order .row {
+    --bs-gutter-x: 2rem;
+    --bs-gutter-y: 2rem;
+  }
+  .main .infor-order .order-form {
+    font-size: 8px;
+    padding: 15px;
+  }
+  .main .infor-order .order-form .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 1.5rem;
+  }
+  .main .infor-order .order-see-again {
+    padding: 10px;
+  }
+  .main .infor-order .order-see-again .row {
+    font-size: 6.5px;
+    --bs-gutter-x: 1rem;
+    --bs-gutter-y: 1rem;
+  }
+  .main .infor-order .order-see-again .back-menu {
+    padding: 8px;
+  }
+  .main .infor-order .order-see-again .order-see-again-food table .btn--food--add, .main .infor-order .order-see-again .order-see-again-food table .btn--food--remove {
+    width: 15px;
+    height: 15px;
+    font-size: 1em;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+  }
+  .main .infor-order .order-see-again .order-see-again-food table .quantity-food {
+    width: 100%;
+    display: block;
+    padding: 3px 0;
+  }
+  .main .infor-order .order-see-again .order-see-again-food th, .main .infor-order .order-see-again .order-see-again-food td {
+    padding: 5px;
+  }
+  .main .infor-order .order-see-again .time-dilivery-title {
+    padding: 8px;
+  }
+  .main .infor-order .order-see-again .time-dilivery .form-group select {
+    padding: 8px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .main .infor-order {
+    margin: 0px;
+    margin-bottom: 40px;
+  }
+  .main .infor-order .row {
+    --bs-gutter-y: 0rem;
+  }
+  .main .infor-order .order-form {
+    margin: 15px;
+    margin-top: 5px;
+    padding: 10px;
+  }
+  .main .infor-order .order-form .row {
+    --bs-gutter-x: 1rem;
+    --bs-gutter-y: 1rem;
+  }
+  .main .infor-order .order-see-again {
+    border: none;
+    box-shadow: initial;
+  }
+}
+
+/*# sourceMappingURL=cart.css.map */

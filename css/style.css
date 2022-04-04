@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    border: 1px solid red;
+    margin: 50px 80px;
+    border-radius: 4px;
+}
+.invalid{
+    border: 2px solid red;
+}
+.form-group > input, .form-group > select, .form-group > textarea{
+    width: 100%;
+    padding: 15px;
+    border: 2px solid grey;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 4px;
+    outline: none;
+}
+#input-submit{
+    background-color: #059862;
+    color: white;
+    cursor: pointer;
+}
+.form-message{
+    font-size: 17px;
+    display: block;
+    padding: 10px 0 0 4px;
+    font-weight: bold;
+}
+.form-title{
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+input:focus, textarea:focus, select:focus{
+    border: 2px solid rgb(4, 171, 226);
+}

@@ -1,0 +1,222 @@
+.main .introduce {
+  background-image: url("../images/introduce.jpg");
+  padding: 0 130px;
+}
+.main .introduce .content {
+  font-size: 10px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main .introduce .content .content__title {
+  font-size: 6em;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: red 3px -3px 5px;
+  color: yellow;
+}
+.main .introduce .content .content__des {
+  font-size: 3em;
+  color: white;
+  padding: 30px 0;
+  text-shadow: red 3px -3px 5px;
+}
+.main .menu .menu-head {
+  padding: 0 70px;
+  font-size: 10px;
+  border-radius: 10px;
+}
+.main .menu .menu-head .types-menu {
+  display: flex;
+}
+.main .menu .menu-head .types-menu div {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+  background-color: #840906;
+  color: white;
+}
+.main .menu .menu-head .types-menu div button {
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  padding: 20px 0;
+  font-size: 2.3em;
+  background-color: inherit;
+  font-family: inherit;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.main .menu .menu-head .types-menu div button:hover {
+  background-color: red;
+}
+.main .menu .menu-head .types-menu div span {
+  position: absolute;
+  bottom: -43%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 3px solid white;
+  padding: 20px;
+  border-radius: 100px;
+  background-color: red;
+}
+.main .menu .menu-body {
+  padding: 70px;
+}
+.main .menu .menu-body .menu-body-1 .row, .main .menu .menu-body .menu-body-2 .row, .main .menu .menu-body .menu-body-3 .row, .main .menu .menu-body .menu-body-4 .row {
+  --bs-gutter-x: 3rem;
+  --bs-gutter-y: 3rem;
+}
+.main .menu .menu-body .menu-body-1 .chicken-item, .main .menu .menu-body .menu-body-2 .chicken-item, .main .menu .menu-body .menu-body-3 .chicken-item, .main .menu .menu-body .menu-body-4 .chicken-item {
+  border: 2px solid red;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  border-bottom-width: 8px;
+  font-size: 10px;
+}
+.main .menu .menu-body .menu-body-1 .chicken-item .chicken-head .ck-img, .main .menu .menu-body .menu-body-2 .chicken-item .chicken-head .ck-img, .main .menu .menu-body .menu-body-3 .chicken-item .chicken-head .ck-img, .main .menu .menu-body .menu-body-4 .chicken-item .chicken-head .ck-img {
+  width: 100%;
+  height: 217px;
+}
+.main .menu .menu-body .menu-body-1 .chicken-item .chicken-body > *, .main .menu .menu-body .menu-body-2 .chicken-item .chicken-body > *, .main .menu .menu-body .menu-body-3 .chicken-item .chicken-body > *, .main .menu .menu-body .menu-body-4 .chicken-item .chicken-body > * {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.main .menu .menu-body .menu-body-1 .chicken-item .chicken-body .ck-name, .main .menu .menu-body .menu-body-2 .chicken-item .chicken-body .ck-name, .main .menu .menu-body .menu-body-3 .chicken-item .chicken-body .ck-name, .main .menu .menu-body .menu-body-4 .chicken-item .chicken-body .ck-name {
+  font-size: 2.2em;
+  color: red;
+  text-transform: uppercase;
+}
+.main .menu .menu-body .menu-body-1 .chicken-item .chicken-body .ck-des, .main .menu .menu-body .menu-body-2 .chicken-item .chicken-body .ck-des, .main .menu .menu-body .menu-body-3 .chicken-item .chicken-body .ck-des, .main .menu .menu-body .menu-body-4 .chicken-item .chicken-body .ck-des {
+  font-size: 1.8em;
+}
+.main .menu .menu-body .menu-body-1 .chicken-item .chicken-body .payment, .main .menu .menu-body .menu-body-2 .chicken-item .chicken-body .payment, .main .menu .menu-body .menu-body-3 .chicken-item .chicken-body .payment, .main .menu .menu-body .menu-body-4 .chicken-item .chicken-body .payment {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .menu .menu-body .menu-body-1 .chicken-item .chicken-body .payment .payment__money, .main .menu .menu-body .menu-body-2 .chicken-item .chicken-body .payment .payment__money, .main .menu .menu-body .menu-body-3 .chicken-item .chicken-body .payment .payment__money, .main .menu .menu-body .menu-body-4 .chicken-item .chicken-body .payment .payment__money {
+  font-size: 2.2em;
+  color: red;
+  font-weight: bold;
+}
+.main .menu .menu-body .menu-body-1 .chicken-item .chicken-body .payment .btn--food, .main .menu .menu-body .menu-body-2 .chicken-item .chicken-body .payment .btn--food, .main .menu .menu-body .menu-body-3 .chicken-item .chicken-body .payment .btn--food, .main .menu .menu-body .menu-body-4 .chicken-item .chicken-body .payment .btn--food {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.4s linear;
+  font-family: inherit;
+  font-size: 1.8em;
+  box-shadow: #d60505 0px 8px 0px 0px;
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.main .menu .menu-body .menu-body-1 .chicken-item .chicken-body .payment .btn--food:hover, .main .menu .menu-body .menu-body-2 .chicken-item .chicken-body .payment .btn--food:hover, .main .menu .menu-body .menu-body-3 .chicken-item .chicken-body .payment .btn--food:hover, .main .menu .menu-body .menu-body-4 .chicken-item .chicken-body .payment .btn--food:hover {
+  box-shadow: #b1750e 0px 8px 0px 0px;
+  background-color: #ffad13;
+  color: black;
+}
+.main .menu .menu-body .menu-body-1 .chicken-item .chicken-body .payment .btn--food:hover, .main .menu .menu-body .menu-body-2 .chicken-item .chicken-body .payment .btn--food:hover, .main .menu .menu-body .menu-body-3 .chicken-item .chicken-body .payment .btn--food:hover, .main .menu .menu-body .menu-body-4 .chicken-item .chicken-body .payment .btn--food:hover {
+  transform: scale(1.1);
+}
+.main .menu .hide {
+  display: none;
+}
+
+@media screen and (max-width: 1199px) {
+  .main .introduce .content {
+    top: 50%;
+  }
+  .main .introduce .content .content__des {
+    line-height: 1.5;
+  }
+  .main .menu .menu-body .menu-body-1 .chicken-item, .main .menu .menu-body .menu-body-2 .chicken-item, .main .menu .menu-body .menu-body-3 .chicken-item, .main .menu .menu-body .menu-body-4 .chicken-item {
+    font-size: 8.2px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .main .introduce .content {
+    font-size: 9px;
+  }
+  .main .menu .menu-head {
+    padding: 0 50px;
+    font-size: 8px;
+  }
+  .main .menu .menu-head .types-menu div span {
+    bottom: -42%;
+    padding: 18px;
+  }
+  .main .menu .menu-body {
+    padding: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main .introduce {
+    padding: 0 50px;
+    height: 350px;
+  }
+  .main .introduce .content {
+    font-size: 7px;
+  }
+  .main .menu .menu-head {
+    font-size: 7px;
+  }
+  .main .menu .menu-head .types-menu div span {
+    bottom: -35%;
+    padding: 15px;
+  }
+  .main .menu .menu-body {
+    padding: 40px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .main .menu .menu-head {
+    padding: 0 30px;
+    font-size: 4.8px;
+  }
+  .main .menu .menu-head .types-menu div span {
+    bottom: -30%;
+    padding: 12px;
+  }
+  .main .menu .menu-body {
+    padding: 30px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .main .introduce {
+    padding: 0 30px;
+  }
+  .main .introduce .content {
+    font-size: 6px;
+  }
+  .main .menu .menu-head {
+    font-size: 6px !important;
+    padding: 0 20px !important;
+    margin-bottom: 10px !important;
+  }
+  .main .menu .menu-head .types-menu {
+    flex-direction: column;
+  }
+  .main .menu .menu-head .types-menu div span {
+    bottom: 25%;
+    left: 80%;
+    transform: translate(0);
+  }
+  .main .menu .menu-body {
+    padding: 20px;
+    padding-bottom: 60px;
+  }
+  .main .menu .menu-body .row {
+    --bs-gutter-x: 2rem !important;
+    --bs-gutter-y: 2rem !important;
+  }
+}
+
+/*# sourceMappingURL=menu.css.map */

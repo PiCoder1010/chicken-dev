@@ -1,0 +1,174 @@
+@media screen and (max-width: 1199px) {
+  .header .nav-header .nav-list .nav-list-link {
+    display: none;
+  }
+  .header .nav-header .nav-list .nav-list-icon .nav-item-icon:nth-last-child(2) > a {
+    padding-right: 16px;
+  }
+  .header .nav-header .nav-list .nav-list-icon .nav-item-icon .bars-icon {
+    display: block;
+  }
+
+  .footer {
+    font-size: 9.9px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .footer .footer-main .row .address {
+    text-align: center;
+  }
+  .footer .footer-main .row .call .call__number {
+    animation: initial;
+  }
+  .footer .footer-main .row .open {
+    text-align: center;
+  }
+  .footer .footer-main .row .contact {
+    text-align: center;
+  }
+  .footer .footer-main .row .contact .nav-list-social {
+    justify-content: center;
+  }
+  .footer .footer-main .row .standard {
+    text-align: center;
+  }
+  .footer .drop-heart {
+    right: 10%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header .nav-header .logo {
+    width: 100px;
+  }
+  .header .nav-header .nav-list .nav-list-icon .nav-item-icon a {
+    padding: 5px 10px;
+  }
+  .header .nav-header .nav-list .nav-list-icon .nav-item-icon:nth-last-child(2) > a {
+    padding-right: 10px;
+  }
+  .header .nav-header .nav-list .nav-list-icon .cart-count .count {
+    width: 25px;
+    height: 25px;
+    bottom: 3px;
+  }
+  .header .nav-header-other {
+    width: 60%;
+  }
+
+  .footer .btn--backtotop {
+    left: 20px;
+  }
+  @keyframes smoothBackUp {
+    0% {
+      bottom: 30px;
+      left: 20px;
+      opacity: 1;
+    }
+    50% {
+      bottom: 60px;
+      left: 20px;
+      opacity: 0.75;
+    }
+    75% {
+      bottom: 90px;
+      left: 20px;
+      opacity: 0.5;
+    }
+    100% {
+      bottom: 100px;
+      left: 20px;
+      opacity: 0;
+    }
+  }
+}
+@media screen and (max-width: 575px) {
+  .header .nav-header {
+    padding: 8px 20px;
+  }
+  .header .nav-header .logo {
+    width: 80px;
+    animation: initial;
+  }
+  .header .nav-header .nav-list .nav-list-icon .nav-item-icon a img {
+    width: 30px;
+  }
+  .header .nav-header .nav-list .nav-list-icon .cart-count .count {
+    width: 20px;
+    height: 20px;
+    bottom: 3px;
+    font-size: 12px;
+  }
+  .header .nav-header-other {
+    width: 100%;
+  }
+
+  .footer .btn--backtotop {
+    bottom: 100px;
+    left: 20px;
+  }
+  @keyframes smoothBackUp {
+    0% {
+      bottom: 110px;
+      left: 20px;
+      opacity: 1;
+    }
+    50% {
+      bottom: 130px;
+      left: 20px;
+      opacity: 0.75;
+    }
+    75% {
+      bottom: 150px;
+      left: 20px;
+      opacity: 0.5;
+    }
+    100% {
+      bottom: 160px;
+      left: 20px;
+      opacity: 0;
+    }
+  }
+  .footer [class^=open__]:last-child {
+    color: yellow;
+    line-height: 1.5 !important;
+  }
+  .footer .address__street, .footer .copy-right__title {
+    line-height: 1.5 !important;
+  }
+  .footer .drop-heart {
+    right: 5%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .footer {
+    font-size: 8px;
+  }
+  .footer .btn--backtotop {
+    bottom: 90px;
+    left: 10px;
+  }
+  @keyframes smoothBackUp {
+    0% {
+      bottom: 100px;
+      left: 10px;
+      opacity: 1;
+    }
+    50% {
+      bottom: 130px;
+      left: 10px;
+      opacity: 0.75;
+    }
+    75% {
+      bottom: 150px;
+      left: 10px;
+      opacity: 0.5;
+    }
+    100% {
+      bottom: 160px;
+      left: 10px;
+      opacity: 0;
+    }
+  }
+}
+
+/*# sourceMappingURL=responsive-main.css.map */

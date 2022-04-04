@@ -1,0 +1,15 @@
+body {
+  background-image: linear-gradient(to right, #f83703, #9b7a0e);
+}
+
+.main .form-login .row .form-title {
+  color: #f83703;
+}
+.main .form-login .form-group input {
+  padding-left: 10px;
+}
+.main .form-login .form-group #input-submit {
+  background-image: linear-gradient(to right, #f83703, #9b7a0e);
+}
+
+/*# sourceMappingURL=signup.css.map */

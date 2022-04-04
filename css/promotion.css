@@ -1,0 +1,278 @@
+.main .introduce {
+  background-image: url("../images/introduce.jpg");
+  padding: 0 150px;
+}
+.main .introduce .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: yellow;
+  text-shadow: red 3px -3px 5px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main .introduce .content .content__title {
+  font-size: 5em;
+  color: yellow;
+  padding: 0;
+  text-transform: uppercase;
+  text-align: initial;
+}
+.main .introduce .content img {
+  width: 250px;
+}
+.main .discount {
+  padding: 80px;
+}
+.main .discount .discount__content {
+  font-size: 10px;
+}
+.main .discount .discount__content .discount-ck {
+  position: relative;
+  border: 4px dashed orangered;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px 50px 30px;
+}
+.main .discount .discount__content .discount-ck .discount-ck__img {
+  width: 268px;
+  height: 268px;
+}
+.main .discount .discount__content .discount-ck .discount-ck__name {
+  font-size: 2.3em;
+  text-transform: uppercase;
+  color: red;
+  text-shadow: 2px -2px 2px yellow;
+  text-align: center;
+}
+.main .discount .discount__content .discount-ck .discount-ck__money {
+  position: relative;
+  font-size: 2.5em;
+  padding: 30px 0;
+  color: red;
+  font-weight: bolder;
+  animation: spinnerLR 1s linear infinite;
+}
+@keyframes spinnerLR {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  50% {
+    top: 0;
+    left: 20px;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+.main .discount .discount__content .discount-ck .btn--discount {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.4s linear;
+  font-family: inherit;
+  font-size: 1.8em;
+  box-shadow: #d60505 0px 8px 0px 0px;
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.main .discount .discount__content .discount-ck .btn--discount:hover {
+  box-shadow: #b1750e 0px 8px 0px 0px;
+  background-color: #ffad13;
+  color: black;
+}
+.main .discount .discount__content .discount-ck .btn--discount:hover {
+  transform: scale(1.1);
+}
+.main .discount .discount__content .discount-ck .discount-ck__percent {
+  position: absolute;
+  font-size: 2em;
+  color: white;
+  background-image: linear-gradient(to right, red, orangered);
+  padding: 5px 8px;
+  border-radius: 5px;
+  top: 20px;
+  right: 20px;
+}
+.main .discount .discount__content .discount-ck--1, .main .discount .discount__content .discount-ck--2, .main .discount .discount__content .discount-ck--3, .main .discount .discount__content .discount-ck--7, .main .discount .discount__content .discount-ck--8, .main .discount .discount__content .discount-ck--9 {
+  border-top: none;
+  border-bottom: none;
+}
+.main .discount .discount__content .discount-ck--1, .main .discount .discount__content .discount-ck--4, .main .discount .discount__content .discount-ck--7, .main .discount .discount__content .discount-ck--3, .main .discount .discount__content .discount-ck--6, .main .discount .discount__content .discount-ck--9 {
+  border-left: none;
+  border-right: none;
+}
+.main .discount .discount__content .discount-ck--5 .discount-ck__img, .main .discount .discount__content .discount-ck--6 .discount-ck__img, .main .discount .discount__content .discount-ck--7 .discount-ck__img, .main .discount .discount__content .discount-ck--8 .discount-ck__img {
+  padding: 40px;
+}
+.main .discount .discount__content .discount-ck--9 .discount-ck__img {
+  padding: 50px;
+}
+
+@media screen and (max-width: 1199px) {
+  .main .introduce {
+    padding: 0 50px;
+  }
+  .main .discount .discount__content {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .main .introduce .content {
+    font-size: 8px;
+  }
+  .main .introduce .content img {
+    width: 180px;
+  }
+  .main .discount .discount__content .discount-ck {
+    border: 4px dashed orangered;
+  }
+  .main .discount .discount__content .discount-ck--1, .main .discount .discount__content .discount-ck--3, .main .discount .discount__content .discount-ck--5, .main .discount .discount__content .discount-ck--7, .main .discount .discount__content .discount-ck--9 {
+    border-left: none;
+    border-top: none;
+  }
+  .main .discount .discount__content .discount-ck--2, .main .discount .discount__content .discount-ck--4, .main .discount .discount__content .discount-ck--6, .main .discount .discount__content .discount-ck--8 {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+  }
+  .main .discount .discount__content .discount-ck--9 {
+    border-bottom: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main .introduce {
+    padding: 0 40px;
+  }
+  .main .introduce .content {
+    flex-direction: column;
+    font-size: 8px;
+  }
+  .main .introduce .content img {
+    width: 150px;
+    margin-top: 40px;
+  }
+  .main .discount {
+    padding: 40px;
+    padding-bottom: 60px;
+  }
+  .main .discount .discount__content .discount-ck {
+    border: 4px dashed orangered;
+  }
+  .main .discount .discount__content .discount-ck--2 {
+    margin-top: 40px;
+  }
+  .main .discount .discount__content .discount-ck--3 {
+    margin-top: 40px;
+  }
+  .main .discount .discount__content .discount-ck--4 {
+    margin-top: 40px;
+  }
+  .main .discount .discount__content .discount-ck--5 {
+    margin-top: 40px;
+  }
+  .main .discount .discount__content .discount-ck--6 {
+    margin-top: 40px;
+  }
+  .main .discount .discount__content .discount-ck--7 {
+    margin-top: 40px;
+  }
+  .main .discount .discount__content .discount-ck--8 {
+    margin-top: 40px;
+  }
+  .main .discount .discount__content .discount-ck--9 {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .main .introduce {
+    padding: 0 20px;
+  }
+  .main .introduce .content {
+    font-size: 6px;
+  }
+  .main .introduce .content .content__title {
+    text-align: center;
+  }
+  .main .discount {
+    padding: 30px;
+    padding-bottom: 60px;
+  }
+  .main .discount .discount__content .discount-ck--2 {
+    margin-top: 30px;
+  }
+  .main .discount .discount__content .discount-ck--3 {
+    margin-top: 30px;
+  }
+  .main .discount .discount__content .discount-ck--4 {
+    margin-top: 30px;
+  }
+  .main .discount .discount__content .discount-ck--5 {
+    margin-top: 30px;
+  }
+  .main .discount .discount__content .discount-ck--6 {
+    margin-top: 30px;
+  }
+  .main .discount .discount__content .discount-ck--7 {
+    margin-top: 30px;
+  }
+  .main .discount .discount__content .discount-ck--8 {
+    margin-top: 30px;
+  }
+  .main .discount .discount__content .discount-ck--9 {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .main .introduce .content {
+    font-size: 5px;
+  }
+  .main .discount {
+    padding: 20px;
+    padding-bottom: 60px;
+  }
+  .main .discount .discount__content .discount-ck--2 {
+    margin-top: 20px;
+  }
+  .main .discount .discount__content .discount-ck--3 {
+    margin-top: 20px;
+  }
+  .main .discount .discount__content .discount-ck--4 {
+    margin-top: 20px;
+  }
+  .main .discount .discount__content .discount-ck--5 {
+    margin-top: 20px;
+  }
+  .main .discount .discount__content .discount-ck--6 {
+    margin-top: 20px;
+  }
+  .main .discount .discount__content .discount-ck--7 {
+    margin-top: 20px;
+  }
+  .main .discount .discount__content .discount-ck--8 {
+    margin-top: 20px;
+  }
+  .main .discount .discount__content .discount-ck--9 {
+    margin-top: 20px;
+  }
+  .main .discount .discount__content .discount-ck .discount-ck__img {
+    padding: 30px;
+  }
+  .main .discount .discount__content .discount-ck .discount-ck__name {
+    line-height: 1.4;
+  }
+  .main .discount .discount__content .discount-ck--5 .discount-ck__img, .main .discount .discount__content .discount-ck--6 .discount-ck__img, .main .discount .discount__content .discount-ck--7 .discount-ck__img, .main .discount .discount__content .discount-ck--8 .discount-ck__img {
+    padding: 60px;
+  }
+  .main .discount .discount__content .discount-ck--9 .discount-ck__img {
+    padding: 70px;
+  }
+}
+
+/*# sourceMappingURL=promotion.css.map */

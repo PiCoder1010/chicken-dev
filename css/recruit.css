@@ -1,0 +1,319 @@
+.main .introduce {
+  background-image: url("../images/introduce.jpg");
+  padding: 0 130px;
+}
+.main .introduce .content {
+  font-size: 10px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main .introduce .content .content__title {
+  font-size: 6em;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: red 3px -3px 5px;
+  color: yellow;
+}
+.main .introduce .content .content__des {
+  font-size: 3em;
+  color: white;
+  padding: 20px 0;
+  padding-right: 200px;
+  line-height: 1.4;
+  text-shadow: red 3px -3px 5px;
+}
+.main .my-team__content {
+  align-items: center;
+  --bs-gutter-x: 4rem;
+  --bs-gutter-y: 4rem;
+}
+.main .my-team {
+  padding: 80px;
+  font-size: 10px;
+}
+.main .my-team .my-team__title {
+  font-size: 3.3em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #f83703;
+}
+.main .my-team .my-team__img {
+  width: 100%;
+  border-radius: 10px;
+  height: 580px;
+}
+.main .my-team .my-team__des {
+  font-size: 1.8em;
+  text-align: justify;
+  line-height: 1.5;
+}
+.main .my-team .my-team__des span {
+  color: #f83703;
+}
+.main .benefits {
+  padding: 0 80px 80px 80px;
+  font-size: 10px;
+  text-align: center;
+}
+.main .benefits .row {
+  --bs-gutter-x: 4rem;
+  --bs-gutter-y: 4rem;
+}
+.main .benefits .row .benefit-title > h1 {
+  font-size: 3.3em;
+  text-transform: uppercase;
+  color: #f83703;
+}
+.main .benefits .row .benefit > h2 {
+  font-size: 1.8em;
+  padding-top: 15px;
+}
+.main .location {
+  font-size: 10px;
+  padding: 80px;
+  padding-top: 60px;
+  background-color: #f4f2f2;
+}
+.main .location > .row {
+  padding: 40px 0;
+  align-items: center;
+  border-bottom: 1px solid grey;
+  margin-top: 20px;
+}
+.main .location > .row:first-child {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.main .location > .row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.main .location .row .location-title {
+  font-size: 3.3em;
+  color: #f83703;
+  text-transform: uppercase;
+  text-align: center;
+}
+.main .location .location-position h2 {
+  font-size: 1.8em;
+}
+.main .location .location-des {
+  padding-left: 100px;
+  line-height: 1.5;
+}
+.main .location .location-des p {
+  font-size: 1.8em;
+}
+.main .location .location-apply {
+  display: flex;
+  justify-content: flex-end;
+}
+.main .location .location-apply .btn--apply {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.4s linear;
+  font-family: inherit;
+  font-size: 1.8em;
+  box-shadow: #d60505 0px 8px 0px 0px;
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+.main .location .location-apply .btn--apply:hover {
+  box-shadow: #b1750e 0px 8px 0px 0px;
+  background-color: #ffad13;
+  color: black;
+}
+.main .location .location-apply .btn--apply:hover {
+  transform: scale(1.1);
+}
+.main .call-me {
+  text-align: center;
+  font-size: 10px;
+  padding: 80px;
+}
+.main .call-me .call-me__title h1 {
+  font-size: 3.3em;
+  color: #f83703;
+  text-transform: uppercase;
+}
+.main .call-me .call-me__phone h2 {
+  font-size: 2.5em;
+  line-height: 1.8;
+}
+
+@media screen and (max-width: 1199px) {
+  .main .introduce .content {
+    font-size: 9px;
+  }
+  .main .introduce .content .content__des {
+    line-height: 1.5;
+    padding-right: 0;
+  }
+  .main .my-team {
+    font-size: 8.5px;
+    padding-top: 50px;
+  }
+  .main .benefits {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .main .introduce .content {
+    font-size: 8.5px;
+  }
+  .main .my-team {
+    padding: 60px;
+    font-size: 8.5px;
+  }
+  .main .benefits {
+    padding: 60px;
+    padding-top: 0;
+    font-size: 8.5px;
+  }
+  .main .benefits .row .benefit-title > h1 {
+    line-height: 1.4;
+  }
+  .main .location {
+    padding: 60px;
+    font-size: 8.5px;
+  }
+  .main .location .location-des {
+    padding-left: 50px;
+  }
+  .main .call-me {
+    padding: 60px;
+    font-size: 8.5px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main .introduce {
+    height: 350px;
+    padding: 0 50px;
+  }
+  .main .introduce .content {
+    font-size: 7.5px;
+  }
+  .main .my-team {
+    padding: 40px;
+  }
+  .main .my-team .my-team__title {
+    font-size: 2.8em;
+  }
+  .main .benefits {
+    font-size: 7px;
+    padding: 40px;
+    padding-top: 0;
+  }
+  .main .benefits .row .benefit > h2 {
+    line-height: 1.5;
+    padding-top: 15px;
+  }
+  .main .location {
+    padding: 40px;
+  }
+  .main .location .location-des {
+    padding-left: 20px;
+  }
+  .main .call-me {
+    padding: 40px;
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .main .introduce .content {
+    font-size: 6.5px;
+  }
+  .main .my-team {
+    padding: 25px;
+    font-size: 8px;
+  }
+  .main .my-team .my-team__content {
+    --bs-gutter-y: 2.3rem;
+  }
+  .main .my-team .my-team__title {
+    line-height: 1.4;
+  }
+  .main .my-team .my-team__img {
+    height: 350px;
+  }
+  .main .benefits {
+    font-size: 5.9px;
+  }
+  .main .benefits .row {
+    --bs-gutter-x: 3rem;
+    --bs-gutter-y: 3rem;
+  }
+  .main .benefits .row .benefit > h2 {
+    line-height: 1.5;
+    padding-top: 15px;
+  }
+  .main .benefits .row .benefit > img {
+    width: 65px;
+  }
+  .main .location {
+    padding: 40px;
+    font-size: 7px;
+  }
+  .main .location .location-des {
+    padding-left: 20px;
+    line-height: 1.6;
+  }
+  .main .location .location-position h2 {
+    line-height: 1.4;
+  }
+  .main .location .location-apply .btn--apply {
+    padding: 8px;
+    box-shadow: #d60505 0px 5px 0px 0px;
+  }
+  .main .location > .row {
+    padding: 20px 0;
+  }
+  .main .call-me {
+    padding-bottom: 60px;
+    font-size: 6px;
+    line-height: 1.4;
+  }
+  .main .call-me .row {
+    --bs-gutter-y: 1.3rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .main .introduce {
+    padding: 0 30px;
+  }
+  .main .introduce .content {
+    font-size: 6px;
+  }
+  .main .my-team {
+    padding: 20px;
+    font-size: 8px;
+  }
+  .main .my-team .my-team__content {
+    --bs-gutter-y: 2rem;
+  }
+  .main .benefits {
+    font-size: 5px;
+    padding: 30px;
+  }
+  .main .benefits .row {
+    --bs-gutter-x: 2rem;
+    --bs-gutter-y: 2rem;
+  }
+  .main .benefits .row .benefit > img {
+    width: 50px;
+  }
+  .main .location {
+    font-size: 5px;
+  }
+  .main .call-me {
+    font-size: 5px;
+  }
+}
+
+/*# sourceMappingURL=recruit.css.map */

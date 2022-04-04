@@ -1,0 +1,189 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #8BC6EC, #2a2f92);
+}
+
+.main {
+  overflow: hidden;
+  padding: 10px;
+}
+.main .form-login {
+  background-color: white;
+  box-shadow: 0 0 10px 5px white;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 10px;
+  margin: 0 480px;
+}
+.main .form-login .row {
+  --bs-gutter-x: 2rem;
+  --bs-gutter-y: 2rem;
+}
+.main .form-login .row .form-title {
+  text-align: center;
+  font-size: 3em;
+  color: blue;
+  text-transform: uppercase;
+}
+.main .form-login .form-group {
+  position: relative;
+}
+.main .form-login .form-group .user-icon, .main .form-login .form-group .pass-icon {
+  position: absolute;
+  left: 10px;
+  top: 13px;
+  font-size: 1.8em;
+  color: grey;
+}
+.main .form-login .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid grey;
+  font-size: 1.7em;
+  font-weight: bold;
+  border-radius: 4px;
+  outline: none;
+  font-family: inherit;
+  padding-left: 30px;
+}
+.main .form-login .form-group input:focus {
+  border: 2px solid #0ab0e7;
+}
+.main .form-login .form-group #input-submit {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.4s linear;
+  font-family: inherit;
+  font-size: 1.8em;
+  box-shadow: #d60505 0px 8px 0px 0px;
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: initial;
+  background-color: #840906;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #f83703;
+  background-image: linear-gradient(to right, #8BC6EC, #2a2f92);
+}
+.main .form-login .form-group #input-submit:hover {
+  box-shadow: #b1750e 0px 8px 0px 0px;
+  background-color: #ffad13;
+  color: black;
+}
+.main .form-login .form-group #input-submit:hover {
+  box-shadow: initial;
+  background-color: green;
+  color: white;
+}
+.main .form-login .form-group #input-submit:hover {
+  background-image: linear-gradient(to left, #8BC6EC, #2a2f92);
+}
+.main .form-login .form-group .message {
+  font-size: 1.5em;
+  display: block;
+  padding-left: 4px;
+  padding-top: 8px;
+  font-weight: bold;
+}
+.main .form-login .form-group .hide {
+  display: none;
+}
+.main .form-login .form-check {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .form-login .form-check a:hover {
+  color: blue;
+}
+.main .form-login .form-check .form-group {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.main .form-login .form-check .form-group input {
+  width: initial;
+}
+.main .form-login .form-check .form-group label {
+  font-size: 1.5em;
+  margin-left: 10px;
+}
+.main .form-login .form-check .forget-password {
+  font-size: 1.5em;
+}
+.main .form-login .login-other .login-other__title {
+  font-size: 1.5em;
+  text-align: center;
+}
+.main .form-login .login-other .login-other__app {
+  margin-top: 20px;
+  text-align: center;
+}
+.main .form-login .login-other .login-other__app img {
+  width: 45px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.main .form-login .login-other .login-other__app img:hover {
+  transform: scale(1.2);
+}
+.main .form-login .login-other .login-other__app img + img {
+  margin-left: 10px;
+}
+.main .form-login .sign-up {
+  text-align: center;
+}
+.main .form-login .sign-up h1 {
+  font-size: 1.5em;
+  text-align: center;
+}
+.main .form-login .sign-up a {
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 1.8em;
+  background-image: linear-gradient(to right, #8BC6EC, #2a2f92);
+  padding: 8px 16px;
+  border-radius: 5px;
+  color: white;
+}
+.main .form-login .sign-up a:hover {
+  background-image: linear-gradient(green, green);
+}
+
+@media screen and (max-width: 1199px) {
+  .main .form-login {
+    margin: 0 150px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main .form-login {
+    margin: 0 60px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .main .form-login {
+    font-size: 8px;
+    margin: 0 30px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .main .form-login {
+    font-size: 7px;
+    margin: 0 30px;
+  }
+}
+
+/*# sourceMappingURL=login.css.map */

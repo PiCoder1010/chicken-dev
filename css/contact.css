@@ -1,0 +1,185 @@
+.main .introduce {
+  background-image: url("../images/introduce.jpg");
+  padding: 0 130px;
+}
+.main .introduce .introduce_content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 10px;
+}
+.main .introduce .introduce_content h1 {
+  font-size: 6em;
+  text-shadow: red 3px -3px 5px;
+  color: yellow;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+.main .introduce .introduce_content p {
+  font-size: 3em;
+  text-shadow: red 3px -3px 5px;
+  color: white;
+  margin-top: 20px;
+  line-height: 1.4;
+}
+.main .contact {
+  margin: 80px;
+  font-size: 10px;
+}
+.main .contact .row {
+  --bs-gutter-x: 4rem;
+  --bs-gutter-y: 4rem;
+}
+.main .contact .contact-map {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px 2px grey;
+}
+.main .contact .contact-map iframe {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+.main .contact .contact-form {
+  border-radius: 5px;
+  box-shadow: 0 0 15px 2px grey;
+  padding: 20px;
+}
+.main .contact .contact-form .row {
+  --bs-gutter-x: 2rem;
+  --bs-gutter-y: 2rem;
+}
+.main .contact .contact-form .form-group > input, .main .contact .contact-form .form-group > textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid grey;
+  font-size: 1.6em;
+  font-weight: bold;
+  border-radius: 4px;
+  outline: none;
+  font-family: inherit;
+}
+.main .contact .contact-form .form-group > input:focus, .main .contact .contact-form .form-group > textarea:focus {
+  border: 2px solid #0ab0e7;
+}
+.main .contact .contact-form .form-title {
+  text-align: center;
+  font-size: 2.5em;
+  color: #f83703;
+  text-transform: uppercase;
+}
+.main .contact .contact-form #input-submit {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.4s linear;
+  font-family: inherit;
+  font-size: 1.8em;
+  box-shadow: #d60505 0px 8px 0px 0px;
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: initial;
+  background-color: #840906;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.main .contact .contact-form #input-submit:hover {
+  box-shadow: #b1750e 0px 8px 0px 0px;
+  background-color: #ffad13;
+  color: black;
+}
+.main .contact .contact-form #input-submit:hover {
+  box-shadow: initial;
+  background-color: green;
+  color: white;
+}
+.main .contact .contact-form .message {
+  font-size: 1.5em;
+  display: block;
+  padding-left: 4px;
+  padding-top: 8px;
+  font-weight: bold;
+}
+.main .contact .contact-form .hide {
+  display: none;
+}
+
+@media screen and (max-width: 1199px) {
+  .main .contact {
+    margin: 60px;
+    margin-bottom: 80px;
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .main .contact {
+    margin: 50px;
+    margin-bottom: 70px;
+  }
+  .main .contact .contact-map {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main .introduce {
+    height: 350px;
+  }
+  .main .introduce .introduce_content {
+    font-size: 9px;
+  }
+  .main .contact {
+    margin: 30px;
+    margin-bottom: 60px;
+    font-size: 7px;
+  }
+  .main .contact .row {
+    --bs-gutter-x: 3rem;
+    --bs-gutter-y: 3rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .main .introduce {
+    height: 350px;
+    padding: 0 50px;
+  }
+  .main .introduce .introduce_content {
+    font-size: 8px;
+  }
+  .main .contact {
+    margin: 20px;
+    margin-bottom: 60px;
+  }
+  .main .contact .row {
+    --bs-gutter-x: 2rem;
+    --bs-gutter-y: 2rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .main .introduce {
+    padding: 0 40px;
+  }
+  .main .introduce .introduce_content {
+    font-size: 6px;
+  }
+  .main .contact {
+    margin: 15px;
+    margin-bottom: 50px;
+    font-size: 7px;
+  }
+  .main .contact .contact-form {
+    padding: 15px;
+  }
+  .main .contact .contact-form .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 1.5rem;
+  }
+  .main .contact .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */
