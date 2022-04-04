@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css//bootstrap-grid.min.css">
+    <title>Form</title>
+</head>
+<body>  
+    <main class="main">
+        <form action="" class="form-recruitment p-4">
+            <section class="row g-4">
+                <article class="col-12">
+                    <h1 class="form-title">Ứng viên ứng tuyển vui lòng điền vào form sau</h1>
+                </article>
+                <article class="col-4">
+                    <div class="form-group">
+                        <input type="text" placeholder="Họ và tên(*)" name="name" id="input-name">
+                        <small class="form-message"></small>
+                    </div>
+                </article>
+                <article class="col-4">
+                    <div class="form-group">
+                        <select name="sex" id="select-sex">
+                            <option value="gt" disabled selected>Giới tính</option>
+                            <option>Nam</option>
+                            <option>Nữ</option>
+                            <option>Khác</option>
+                        </select>
+                    </div>
+                </article>
+                <article class="col-4">
+                    <div class="form-group">
+                        <input type="text" placeholder="Năm sinh(*)" name="birth" id="input-birth">
+                        <small class="form-message"></small>
+                    </div>
+                </article>
+                <article class="col-4">
+                    <div class="form-group">
+                        <input type="text" placeholder="Số điện thoại(*)" name="numberphone" id="input-numberphone">
+                        <small class="form-message"></small>
+                    </div>
+                </article>
+                <article class="col-8">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nhập địa chỉ(*)" name="address" id="input-address">
+                        <small class="form-message"></small>
+                    </div>
+                </article>
+                <article class="col-4">
+                    <div class="form-group">
+                        <select id="select-level" name="level">
+                            <option value="gt" disabled selected>Trình độ học vấn</option>
+                            <option>Đại học</option>
+                            <option>Cao đẳng</option>
+                            <option>Phổ thông</option>
+                        </select>
+                        <small class="form-message"></small>
+                    </div>
+                </article>
+                <article class="col-4">
+                    <div class="form-group">
+                        <select id="select-shift" name="shift">
+                            <option value="gt" disabled selected>Ca làm việc</option>
+                            <option>Ca sáng</option>
+                            <option>Ca trưa</option>
+                            <option>Ca tối</option>
+                        </select>
+                        <small class="form-message"></small>
+                    </div>
+                </article>
+                <article class="col-4">
+                    <div class="form-group">
+                        <select id="select-stick" name="stick">
+                            <option value="gt" disabled selected>Dự định gắn bó</option>
+                            <option>Ngắn hạn</option>
+                            <option>Trung hạn</option>
+                            <option>Lâu dài</option>
+                        </select>
+                        <small class="form-message"></small>
+                    </div>
+                </article>
+                <article class="col-12">
+                    <div class="form-group">
+                        <input type="text" placeholder="Link Facebook cá nhân" name="facebook" id="input-link">
+                        <small class="form-message"></small>
+                    </div>
+                </article>
+                <article class="col-12">
+                    <div class="form-group">
+                        <textarea name="exper" id="input-exper" cols="30" rows="10" placeholder="Kinh nghiệm ở vị trí ứng tuyển"></textarea>
+                        <small class="form-message"></small>
+                    </div>
+                </article>
+                <article class="col-12">
+                    <div class="form-group">
+                        <input type="submit" value="Gửi yêu cầu" name="submit_id" id="input-submit">
+                    </div>
+                </article>
+            </section>
+        </form>
+    </main>
+    <script src="../js/validationForm.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

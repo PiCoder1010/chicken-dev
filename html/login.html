@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" href="../images/favicon.png" type="image/png">
+    <!-- CDN - Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- CDN - AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Bootstrap5 - Grid -->
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- Responsive  -->
+    <link rel="stylesheet" href="../css/responsive-main.css">
+    <!-- My style -->
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Chicken DEV | Đăng nhập</title>
+</head>
+
+<body>
+    <main class="main">
+        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <form action="#" class="form-login">
+                <section class="row">
+                    <article class="col-12">
+                        <h1 class="form-title">Đăng nhập</h1>
+                    </article>
+                    <article class="col-12">
+                        <div class="form-group">
+                            <input type="text" placeholder="Tài khoản" name="username" id="input-username">
+                            <p class="message hide"></p>
+                            <i class="fa-solid fa-user user-icon"></i>
+                        </div>
+                    </article>
+                    <article class="col-12">
+                        <div class="form-group">
+                            <input type="password" placeholder="Mật khẩu" name="password" id="input-password">
+                            <p class="message hide"></p>
+                            <i class="fa-solid fa-lock pass-icon"></i>
+                        </div>
+                    </article>
+                    <article class="col-12">
+                        <div class="form-check">
+                            <div class="form-group">
+                                <input type="checkbox" name="" id="">
+                                <label for="">Ghi nhớ tài khoản</label>
+                            </div>
+                            <a href="#">
+                                <p class="forget-password">Quên mật khẩu</p>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="col-12">
+                        <div class="form-group">
+                            <input type="submit" placeholder="Đăng nhập" id="input-submit">
+                        </div>
+                    </article>
+                    <article class="col-12">
+                        <div class="login-other">
+                            <h2 class="login-other__title">
+                                <span>Hoặc đăng nhập bằng</span>
+                            </h2>
+                            <div class="login-other__app">
+                                <img src="../images/facebook.png" alt="">
+                                <img src="../images/google-plus.png" alt="">
+                                <img src="../images/twitter.png" alt="">
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12">
+                        <div class="sign-up">
+                            <h1>Bạn chưa có tài khoản ?</h1>
+                            <a href="./signup.html" target="_blank">
+                                Đăng kí ngay
+                            </a>
+                        </div>
+                    </article>
+                </section>
+            </form>
+        </div>
+    </main>
+    <!-- CDN - JS - Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Data Script -->
+    <script src="../js/data.js"></script>
+    <!-- Main script -->
+    <script src="../js/main.js"></script>
+    <!-- Validation form main -->
+    <script src="../js/validationForm.js"></script>
+    <!-- Homepage Script  -->
+    <script src="../js/login.js"></script>
+    <!-- CDN AOS JS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
